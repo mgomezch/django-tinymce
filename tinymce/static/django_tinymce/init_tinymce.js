@@ -11,7 +11,7 @@ var django = django || {
       // functions, assume that we were given a function name, and resolve that
       // to a function reference using the `window` global.
       var fns = ['color_picker_callback', 'file_browser_callback', 'file_picker_callback',
-            'images_dataimg_filter', 'images_upload_handler'];
+            'images_dataimg_filter', 'images_upload_handler', 'setup'];
       for (var i=0;i<fns.length;i++) {
         if (typeof mce_conf[fns[i]] !== undefined) {
           var fn = mce_conf[fns[i]];
